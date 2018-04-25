@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     smallest = c.delete(0)
   elsif (c[1] < c[2] && c[1] < c[0])
     smallest = c.delete(1)
-  else
+  elsif (c[2]<c[1] && c[2]<c[0])
     smallest = c.delete(2)
   end
 
