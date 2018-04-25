@@ -14,7 +14,7 @@ def key_for_min_value(name_hash)
   end
 
   name_hash.find do |k,v|
-    v <= c
+    v == c
     return k
   end
 end
