@@ -7,5 +7,9 @@ def key_for_min_value(name_hash)
 
   smallest = c.min
 
-  name_hash.select { |k,v| return k if v == smallest }
+  if name_hash == {}
+    nil
+  else
+    name_hash.select { |k,v| return k if v == smallest }
+  end
 end
