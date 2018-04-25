@@ -11,4 +11,5 @@ def key_for_min_value(name_hash)
     nil
   else
     name_hash.select { |k,v| return k if v == smallest }
+  end
 end
