@@ -7,17 +7,8 @@ def key_for_min_value(name_hash)
     c << value
   end
 
-  if c[0] > c[1]
-    big = c[0]
-  else
-    big = c[1]
-  end
+  largest = c.max
 
-  if big > c[2]
-    big
-  else
-    bigger = c[2]
-  end
+  name_hash[largest]
 
-  name_hash[big]
 end
