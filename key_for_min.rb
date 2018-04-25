@@ -13,6 +13,9 @@ def key_for_min_value(name_hash)
     c.delete(2)
   end
 
-  lowest = name_hash.find { |k,v| name_hash[k] <= c }
-  lowest.keys
+  lowest = name_hash.find do |k,v| 
+    name_hash[k] <= c
+    return k
+  end
+  lowest
 end
