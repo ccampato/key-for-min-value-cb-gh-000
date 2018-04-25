@@ -13,5 +13,5 @@ def key_for_min_value(name_hash)
     smallest = c.delete(2)
   end
 
-  name_hash.select { |k,v| k if v == smallest }
+  name_hash.select { |k,v| return k if v == smallest }
 end
