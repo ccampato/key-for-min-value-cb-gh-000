@@ -19,5 +19,5 @@ def key_for_min_value(name_hash)
     bigger = c[2]
   end
 
-  name_hash
+  name_hash[big]
 end
