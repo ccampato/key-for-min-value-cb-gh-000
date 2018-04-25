@@ -14,5 +14,5 @@ def key_for_min_value(name_hash)
   end
 
   lowest = name_hash.find { |k,v| name_hash[k] <= c }
-  lowest
+  lowest.keys
 end
