@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
     c.delete(1)
   elsif c[2] > c[0] || c[2] > c[1]
     c.delete(2)
+  end
 
   lowest = name_hash.find { |k,v| name_hash[k] <= c }
   lowest
