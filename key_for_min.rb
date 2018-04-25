@@ -13,8 +13,7 @@ def key_for_min_value(name_hash)
     smallest = c.delete(2)
   end
 
-  name_hash.find do |k,v|
-    v == smallest
-    return k
-  end
+  ans = name_hash.each { |k,v| ans << k if v == smallest }
+  ans
+        
 end
